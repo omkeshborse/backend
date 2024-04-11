@@ -1,5 +1,5 @@
 const express = require("express");
-process.loadEnvFile();
+const dotenv = require("dotenv").config();
 const port = process.env.PORT || 5000;
 const tasksRoutes = require("./routes/taskRoutes.js");
 const userRoutes = require("./routes/userRoutes.js");
